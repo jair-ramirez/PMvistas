@@ -23,39 +23,12 @@ const Header = {
   fontSize: "22px"
 }
 
-class App extends Component {
-
-  constructor(props){
-      super();
-      this.handleSubmit = this.handleSubmit.bind(this);
-    }
-
-    handleSubmit(event) {
-       event.preventDefault();
-       const data = new FormData(event.target);
-
-       fetch('/signup', {
-         method: 'POST',
-         body: data,
-       });
-   }
-
+class Signup extends Component {
   render() {
     return (
       <section style={ sectionStyle }>
       <div className="App">
-        {/*Test
 
-        <form>
-          <label>
-            Nombre:
-            <input type="text" name="name" />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
-        */}
-
-<form onSubmit={this.handleSubmit}>
         <form action="action_page.php">
           <div class="imgcontainer" >
             <img src="img_avatar2.png" alt="Avatar" class="avatar"/>
@@ -63,27 +36,31 @@ class App extends Component {
 
           <div style={TodoComponent}>
             <h2 style={Header}>Inicia Sesión</h2>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Nombre" name="name" required/>
+            <br/>
             <label for="uname"><b>Username</b></label>
             <input type="text" placeholder="Usuario" name="uname" required/>
+            <br/>
+            <label for="mail"><b>Email</b></label>
+            <input type="email" placeholder="Correo electrónico" name="mail" required/>
             <br/>
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Contraseña" name="psw" required/>
             <br/>
+
             <button type="submit">Login</button>
             <br/>
             <label>
               <input type="checkbox" checked="checked" name="remember"/> Recordarme
             </label>
-<br/>
-            <span class="psw">¿Olvidaste tu <a href="/">contraseña?</a></span>
             <br/>
-              <p>¿Necesitas una cuenta? <a href="/signup">Regístrate</a></p>
+            <br/>
+              <p>¿Ya tienes una cuenta? <a href="/">Inicia sesión</a></p>
 
           </div>
 
         </form>
-        </form>
-
 
       </div>
       </section>
@@ -92,4 +69,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Signup;
