@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import Background from './portada4.jpg';
+import Signup from './Signup';
+import {BrowserRouter, Route} from 'react-router-dom';
+
 
 var sectionStyle = {
  width: "100%",
@@ -11,7 +14,7 @@ var sectionStyle = {
 const TodoComponent = {
   width: "400px",
   margin: "100px auto",
-  backgroundColor: "rgba(170, 165, 30, 0.75)",
+  backgroundColor: "rgba(200, 200, 195, 0.75)",
   minHeight: "250px",
   boxSizing: "border-box",
   textAlign: "center",
@@ -34,7 +37,7 @@ class App extends Component {
        event.preventDefault();
        const data = new FormData(event.target);
 
-       fetch('/signup', {
+       fetch('/login', {
          method: 'POST',
          body: data,
        });

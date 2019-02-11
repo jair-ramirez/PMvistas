@@ -11,7 +11,7 @@ var sectionStyle = {
 const TodoComponent = {
   width: "400px",
   margin: "100px auto",
-  backgroundColor: "rgba(170, 165, 30, 0.75)",
+  backgroundColor: "rgba(200, 200, 195, 0.75)",
   minHeight: "250px",
   boxSizing: "border-box",
   textAlign: "center",
