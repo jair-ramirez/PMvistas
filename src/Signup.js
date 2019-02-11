@@ -35,7 +35,7 @@ class Signup extends Component {
           </div>
 
           <div style={TodoComponent}>
-            <h2 style={Header}>Inicia Sesión</h2>
+            <h2 style={Header}>Registrate</h2>
             <label for="name"><b>Name</b></label>
             <input type="text" placeholder="Nombre" name="name" required/>
             <br/>
@@ -68,5 +68,4 @@ class Signup extends Component {
 
   }
 }
-
 export default Signup;

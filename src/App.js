@@ -2,28 +2,28 @@ import React, { Component } from 'react';
 import Background from './portada4.jpg';
 
 var sectionStyle = {
- width: "100%",
- height: "640px",
- backgroundImage: `url(${Background})`,
- backgroundSize: 'cover'
-};
+  width: "100%",
+  height: "640px",
+  backgroundImage: `url(${Background})`,
+  backgroundSize: 'cover'
+ };
+ 
+ const TodoComponent = {
+   width: "400px",
+   margin: "100px auto",
+   backgroundColor: "rgba(170, 165, 30, 0.75)",
+   minHeight: "250px",
+   boxSizing: "border-box",
+   textAlign: "center",
+ }
+ const Header = {
+   padding: "10px 20px",
+   textAlign: "center",
+   color: "white",
+   fontSize: "22px"
+ }
 
-const TodoComponent = {
-  width: "400px",
-  margin: "100px auto",
-  backgroundColor: "rgba(170, 165, 30, 0.75)",
-  minHeight: "250px",
-  boxSizing: "border-box",
-  textAlign: "center",
-}
-const Header = {
-  padding: "10px 20px",
-  textAlign: "center",
-  color: "white",
-  fontSize: "22px"
-}
-
-class App extends Component {
+class App extends Component  {
 
   constructor(props){
       super();
@@ -78,18 +78,16 @@ class App extends Component {
             <span class="psw">¿Olvidaste tu <a href="/">contraseña?</a></span>
             <br/>
               <p>¿Necesitas una cuenta? <a href="/signup">Regístrate</a></p>
-
           </div>
 
         </form>
         </form>
 
-
       </div>
       </section>
-    );
 
+    );
   }
 }
 
-export default App;
+export default App
