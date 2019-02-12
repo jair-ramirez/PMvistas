@@ -19,8 +19,8 @@ const TodoComponent = {
 const Header = {
   padding: "10px 20px",
   textAlign: "center",
-  color: "white",
-  fontSize: "22px"
+  color: "black",
+  fontSize: "25px"
 }
 
 class Signup extends Component {
@@ -31,25 +31,24 @@ class Signup extends Component {
 
         <form action="action_page.php">
           <div class="imgcontainer" >
-            <img src="img_avatar2.png" alt="Avatar" class="avatar"/>
+            <label> </label>
           </div>
 
           <div style={TodoComponent}>
-            <h2 style={Header}>Inicia Sesión</h2>
-            <label for="name"><b>Name</b></label>
+            <h2 style={Header}>Regístrate</h2>
             <input type="text" placeholder="Nombre" name="name" required/>
             <br/>
-            <label for="uname"><b>Username</b></label>
+            <br/>
             <input type="text" placeholder="Usuario" name="uname" required/>
             <br/>
-            <label for="mail"><b>Email</b></label>
+            <br/>
             <input type="email" placeholder="Correo electrónico" name="mail" required/>
             <br/>
-            <label for="psw"><b>Password</b></label>
+            <br/>
             <input type="password" placeholder="Contraseña" name="psw" required/>
             <br/>
-
-            <button type="submit">Login</button>
+            <br/>
+            <button type="submit">Iniciar</button>
             <br/>
             <label>
               <input type="checkbox" checked="checked" name="remember"/> Recordarme
@@ -68,5 +67,4 @@ class Signup extends Component {
 
   }
 }
-
 export default Signup;
